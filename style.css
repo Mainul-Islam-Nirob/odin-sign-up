@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&family=Roboto+Condensed:wght@300;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&display=swap');
+:root {
+    --light-blue: #b0bce3;
+    --very-dark-blue: #17121d;
+    --dark-blue: rgba(33, 25, 44, 0.945);
+    --orange: #da810d;
+    --white: #fff;
+    
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./font/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed',
+    sans-serif;
+}
+
+.container {
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/* Left side css */
+.left {
+    width: 35%;
+    background-image: url("./img/sm-bg.jpg");
+}
+
+
+.brand {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(14, 0, 0, 0.644);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25%;
+    
+}
+
+.logo {
+    display: flex;
+}
+
+
+.logo img {
+    height: 100%;
+    width: auto;
+    padding: 10px 0;
+}
+
+.left .logo-txt {
+    font-family: norse-bold, sans-serif;
+    align-self: center;
+    color: #fff;
+    font-size: 90px;
+}
+
+/* right side css */
+.right {
+    width: 65%;
+    padding: 50px 0;
+}
+
+.info {
+    font-size: 20px;
+    margin: 0 50px 25px;
+}
+
+.motivation {
+    font-size: 22px;
+    font-style: italic;
+    margin: 0 0 30px 50px;
+    color: var(--orange);
+}
+
+.form {
+    color: var(--light-blue);
+
+}
+
+.form-elements {
+    max-height: 500px;
+    background-color: var(--dark-blue);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    padding: 40px 50px;
+}
+
+.form-elements h1 {
+    font-size: 40px;
+    color: var(--orange);
+}
+.name, .email-phone, .pass-container  {
+    display: flex;
+}
+
+.name , .email-phone, .pass-container > div {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+.form-elements input {
+    width: 350px;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin: 5px 50px 0 0;
+    background-color: #b0bce3;
+    color: #000;
+    border-radius: 5px;
+
+    border-color: var(--very-dark-blue);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+
+}
+
+input::placeholder {
+    color: var(--very-dark-blue);
+}
+
+input:focus {
+    border-color: var(--orange);
+    outline: none;
+    box-shadow: hsla(36, 92%, 48%, 0.796) 0px 1px 6px -1px,
+    hsla(36, 92%, 48%, 0.796) 0px 1px 4px -1px;
+
+}
+input:invalid {
+    border-color: red;
+     outline: none;
+     box-shadow: red 0px 1px 6px -1px,
+     red 0px 1px 4px -1px;
+
+}
+
+input:valid {
+    border-color: green;
+     box-shadow: green 0px 1px 6px -1px,
+     green 0px 1px 4px -1px;
+
+}
+
+.form-footer {
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 50px;
+
+}
+
+.btn {
+    padding: 10px 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--light-blue);
+    background-color: var(--orange);
+    margin-top: 50px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+     color: var(--light-blue);
+     background-color: #da810dc4;
+     cursor: pointer;
+}
+.form-footer a {
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: bold;
+}
