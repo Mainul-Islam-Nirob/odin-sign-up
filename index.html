@@ -11,7 +11,7 @@
     <div class="container">
 
       <!-- Left side -->
-      <div class="left">
+      <div class="left" title="background image by Victor Grabarczyk https://unsplash.com/@victor_vector">
           <div class="brand">
             <div class="logo">
                 <img src="/img/odin-lined.png" alt="ODIN">
@@ -28,7 +28,7 @@
           to get started. 
           <p class="motivation">You know you want to.</h5>
         </p>
-        <form class="form" action="#" method="post">
+        <form class="form">
             <div class="form-elements">
                 <h1>Let's do this!</h1>
                 <div class="name">
@@ -58,18 +58,18 @@
                  <div class="pass-container">
                     <div>
                          <label for="password">PASSWORD*</label> <br>
-                         <input required type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">                     
+                         <input required type="password" id="password" name="password" title="Password must contain at least 6 character with number, upper and lower case letter" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">                     
                     </div>
                     
                     <div>
                          <label for="confirm-pass">CONFIRM PASSWORD*</label> <br>
-                         <input required type="password" id="confirm-pass" name="confirm-pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">                     
+                         <input required type="password" id="confirm-pass" name="confirm-pass" title="Password must contain at least 6 character with number, upper and lower case letter" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">                     
                     </div>
                     
                 </div>
             </div>
 
-            <input class="btn" type="submit" value="Create Account">
+            <button class="btn" type="submit">Create Account </button>
 
             <p class="form-footer">Already have an account? <a href="#"> Log in</a></p>
         </form>

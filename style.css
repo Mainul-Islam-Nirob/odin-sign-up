@@ -33,6 +33,7 @@
 .left {
     width: 35%;
     background-image: url("./img/sm-bg.jpg");
+
 }
 
 
@@ -119,37 +120,23 @@ label {
     background-color: #b0bce3;
     color: #000;
     border-radius: 5px;
-
     border-color: var(--very-dark-blue);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
 
 }
 
-input::placeholder {
-    color: var(--very-dark-blue);
-}
 
 input:focus {
-    border-color: var(--orange);
     outline: none;
-    box-shadow: hsla(36, 92%, 48%, 0.796) 0px 1px 6px -1px,
-    hsla(36, 92%, 48%, 0.796) 0px 1px 4px -1px;
-
-}
-input:invalid {
-    border-color: red;
-     outline: none;
-     box-shadow: red 0px 1px 6px -1px,
-     red 0px 1px 4px -1px;
-
 }
 
-input:valid {
-    border-color: green;
-     box-shadow: green 0px 1px 6px -1px,
-     green 0px 1px 4px -1px;
+input:invalid:focus {
+    border: 2px solid rgb(235, 23, 58)
+}
 
+input:valid:focus {
+    border: 2px solid rgb(8, 165, 228);
 }
 
 .form-footer {
