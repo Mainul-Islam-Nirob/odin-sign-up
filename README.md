@@ -17,7 +17,7 @@ The final output:
 ![Desktop-view](img/final-look.png)
 
 ### Links
-Live Site URL: [Live site of the challenge hosted here](#)
+Live Site URL: [Live site of the challenge hosted here](https://mainul-islam-nirob.github.io/odin-sign-up/)
 
 ## My process
 Hello, this is my 5th project here in The Odin Project. It’s a sign-up form for an imaginary service. It has basic validation rules without using JavaScript.
